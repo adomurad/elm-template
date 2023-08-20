@@ -1,0 +1,24 @@
+{
+  "name": "fullelmscss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -n \"ELM>,SASS>,PROXY>\" -c cyan,red,magenta -k -p {name} \"npm run watch:elm\" \"npm run watch:styles\" \"npm run serve\"",
+    "build": "./build.sh ./src/Main.elm",
+    "serve": "servor ./public --reload",
+    "watch:elm": "elm-live ./src/Main.elm --no-server -- --debug --output ./public/elm.min.js",
+    "watch:styles": "sass --watch style/main.scss:public/style.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.0",
+    "elm-live": "^4.0.2",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.66.1",
+    "servor": "^4.0.2",
+    "uglifyjs": "^2.4.11"
+  }
+}

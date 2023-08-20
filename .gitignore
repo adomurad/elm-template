@@ -1,0 +1,8 @@
+public/elm.js
+public/elm.min.js
+public/style.min.css
+public/style.min.css.map
+elm-stuff/
+node_modules/
+out/*
+!out/.gitkeep

@@ -1,4 +1,7 @@
 {
   "workbench.colorTheme": "Bearded Theme Black & Amethyst",
-  "editor.tabSize": 4
+  "editor.tabSize": 4,
+  "cSpell.words": [
+    "autoprefix"
+  ]
 }

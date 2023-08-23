@@ -2,6 +2,12 @@
 
 Just a minimal ELM template.
 
+## Features
+
+- watch and hot replace elm code
+- watch and hot replace SASS styles
+- optimized production build
+
 ## Setup
 
 To setup dependencies, just run:
